@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  kyle:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-11T11:31:49.973344-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 3276080904babd5deb8cc39eff50e8f8b5be0a940deac10ecae10567be14e755
+    name: kyle
+    type: application
+    urls:
+    - https://moosecanswim.github.io/helm-chart-repo/kyle-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-11T11:31:49.97206-05:00"
+    description: A Helm chart for Kubernetes
+    digest: b60445d398ce90488eb02ee723eac9ab846dc162394eca0fe3faff26ff105978
+    name: kyle
+    type: application
+    urls:
+    - https://moosecanswim.github.io/helm-chart-repo/kyle-0.1.0-devel.tgz
+    version: 0.1.0-devel
+generated: "2021-01-11T11:31:49.966739-05:00"
