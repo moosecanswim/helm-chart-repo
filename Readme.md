@@ -10,7 +10,7 @@ To create this project i followed the tutorial [here](https://medium.com/@mattia
 2. Ran `helm package kyle`
    1. Updated the chart.yaml with `version: 0.1.0-devel` and packaged again.
    2. Did above but with `version: 0.1.0-rc1`
-3. Created index.yaml with `helm repo index --url https://moosecanswim.github.io/helm-chart-repo/ --index.yaml .`
+3. Created index.yaml with `helm repo index --url https://moosecanswim.github.io/helm-chart-repo/ .`
 4. In github settings enabled a github page based on the root directory of the master branch
 5. Added the remote helm repo we just published to the my local helm repo list with `helm repo add kyle https://moosecanswim.github.io/helm-chart-repo`
    1. make sure it works with `helm search kyle`
