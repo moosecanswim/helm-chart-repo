@@ -19,6 +19,21 @@ To create this project i followed the tutorial [here](https://medium.com/@mattia
 7. Test install a development version: `helm install test-devel --version 0.1.0-devel kyle/kyle -n test --devel`
    1. This installs the `kyle-0.1.0-devel` chart
 
+## Scripts
+
+`update-version-suffix.sh`: this script will accept two inputs:
+
+- Current is the current pre-release version
+- Next: the new pre-release version suffix
+  
+The script will go through and find all Chart.yaml files and if the current pre-release is there will replace it with the next pre-release version
+
+ex: `./update-version-suffix.sh 0 1` will replace all versions with `-0` with `-1`
+
+> *NOTE: this will remove comments in the Chart.yaml file*
+
+TODO: update this to work with dependencies versions in parent charts.  make this increment automatically based on current pre-release.
+
 ## Conclusions
 
 This means we can use helm's built in development management tools to differentiate between current release artifacts and the development versions (differentiated by the `-something`) while hosting artifacts in the same helm repo.
